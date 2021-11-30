@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('iready.png		');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+color: red;
+}
+
+.hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+
+
+
+widgetbot {
+display: none;
+}
+
+</style>
+<link rel="icon" href="https://images-ext-2.discordapp.net/external/sSaL1RT9y_XVn2uZo6NpvS4rgU2gma14Iai2_58K5-I/https/assets.clever.com/resource-icons/apps/5148b6242e35482071000011/icon_964188f.png?width=160&height=160
+">
+    <title>Math To Do, i-Ready</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div id="welcomeDiv"  style="display:none;" class="answer_list" > </div>
+<input type="button" name="answer" value="Show Div" onclick="showDiv()" />
+
+<script>
+function showDiv() {
+   document.getElementById('myDIV').style.display = "block";
+}
+</script>
+
+<button onclick="myFunction()" class ="btn">Togle discord</button>
+
+<div id="myDIV">
+<widgetbot
+  server="912046585452572724"
+  channel="912046585913950250"
+  width="1366"
+  height="745" >
+
+</widgetbot>
+
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
